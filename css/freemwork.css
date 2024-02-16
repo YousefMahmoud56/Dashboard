@@ -1,0 +1,297 @@
+/* start box */
+.d-flex {
+    display: flex;
+}
+.items-c{
+    align-items: center;
+}
+.d-grid{
+    display: grid;
+}
+.gap-20{
+    gap: 20px;
+}
+.d-block{
+    display: block;
+}
+@media(max-width:767px){
+    .block-mobile{
+        display: block;
+    }
+}
+@media(max-width:767px){
+    .mobile-none{
+        display: none;
+    }
+}
+/* end box */
+/* start child box  */
+.jc-c{
+    justify-content: center;
+}
+.jc-space{
+    justify-content: space-between;
+}
+.jc-ev{
+    justify-content: space-evenly;
+}
+.jc-ar{
+    justify-content: space-around;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+/* end child box  */
+/* start width & height */
+
+.w-full{
+    width: 100%;
+}
+.h-full{
+    width: 100%;
+}
+/* end width & height */
+/* start padding and margin */
+.m-0{
+    margin: 0px;
+}
+.m-5{
+    margin: 5px;
+}
+.m-10{
+    margin: 10px;
+}
+.mt-10{
+    margin-top: 10px;
+}
+.mr-10{
+    margin-right: 10px;
+}
+.mr-20{
+    margin: 20px;
+}
+
+.mb-10{
+    margin-bottom: 10px;
+}
+.ml-10{
+    margin-left: 10px;
+}
+.m-15{
+    margin: 15px;
+}
+.m-20px{
+    margin: 20px;
+}
+.mt-20{
+    margin-top: 20px;
+}
+.mr-20{
+    margin-right: 20px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.ml-20{
+    margin-left: 20px;
+}
+.p-20px{
+    padding: 20px;
+}
+.p-10{
+    padding: 10px; ;
+}
+.p-15{
+    padding: 15px;
+}
+/* start padding and margin */
+/* start postion */
+.p-relative{
+    position: relative;
+}
+.p-absolute{
+    position: absolute;
+}
+/* end postion */
+/* start color */
+.bg-w {
+    background-color: white;
+}
+.bg-eee{
+    background-color: #eee;
+}
+.c-white{
+    color: white;
+}
+.c-gray{
+    color: #888;
+}
+.c-orange{
+    color:#f59e0b;
+}
+.c-blue{
+    color:#0075ff;
+}
+.c-blue-alt{
+    color:#0d69d5;
+}
+.c-red{
+    color:#f44336;
+}
+.c-green{
+    color: #22c55e;
+}
+.bg-gray{
+    background-color: #888;
+}
+.bg-orange{
+    background-color:#f59e0b;
+}
+.bg-blue{
+    background-color:#0075ff;
+}
+.bg-blue-alt{
+    background-color:#0d69d5;
+}
+.bg-red{
+    background-color:#f44336;
+}
+.bg-green{
+    background-color: #22c55e;
+}
+/* end color */
+/* start font  */
+.txt-c{
+    text-align: center;
+}
+.fs-13{
+    font-size: 13px;
+}
+.fs-10{
+    font-size: 10px;
+}
+.fs-14{
+    font-size: 14px;
+}
+.fs-20{
+    font-size: 20px;
+}
+.fs-25{
+    font-size: 25px;
+}
+.f-bold{
+    font-weight: bold;
+}
+@media(max-width:767px){
+    .txt-c-mobile{
+        text-align: center;
+    }
+}
+.fw-500{
+    font-weight: 500;
+}
+/* end font  */
+/* start border  */
+.rad-6{
+    border-radius: 6px;
+} 
+.rad-10{
+    border-radius: 10px;
+}
+.b-none{
+    border: none;
+}
+.border-ccc{
+    border: 1px solid #ccc;
+}
+.border-eee{
+    border: 1px solid #eee;
+}
+/* start border  */
+/* start components */
+.between-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.butn-sheep{
+    padding: 4px 10px ;
+    border-radius: 6px;
+    display: block;
+    background-color: #eee;
+    font-size: 13px;
+}
+.iam-wrapper{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+.p-butn{
+    padding: 4px 10px;
+}
+
+/* toggle */
+.toggle-checkbox{
+    -webkit-appearance: none;  
+    appearance: none;
+    
+}
+.toggle-switch{
+    width: 78px;
+    height: 32px;
+    background-color: #ccc;
+    border-radius: 16px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.toggle-switch::after{
+    font-family: "Font Awesome 6 Free";
+    content: "\f00d";
+    position: absolute;
+    font-weight: bold;
+    width: 17px;
+    height: 17px;
+    background-color: white;
+    color: #ccc;
+    padding: 4px;
+    border-radius: 50%;
+    left: 4px;
+    top: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+.toggle-checkbox:checked + .toggle-switch{
+    background-color: var(--blue-color);
+}
+
+.toggle-checkbox:checked + .toggle-switch::after{
+    font-family: "Font Awesome 6 Free";
+    content: "\f00c";
+    position: absolute;
+    font-weight: bold;
+    width: 17px;
+    height: 17px;
+    background-color: white;
+    color: var(--blue-color);
+    padding: 4px;
+    border-radius: 50%;
+    left: 48px;
+    top: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*toggal*/
+/*
+                <label >
+                    <input class="toggle-checkbox" type="checkbox" checked>
+                    <div class="toggle-switch"></div>
+                </label>
+*/
+.align-center{
+    align-items: center;
+}
+/* end components */
